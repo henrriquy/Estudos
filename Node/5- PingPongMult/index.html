@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PingPong</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>PingPong</h1>
+        <form>
+            <div class="form-group row">
+                <div class="col-8">
+                    <input type="text" class="form-control" id="nomeJogador" placeholder="Digite o seu nome de jogador">
+                </div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-primary" id="btnEnviaDados" role="button" data-toggle="popover" data-trigger="focus"
+                        title="Iniciando o jogo" data-placement="left" data-content="Para iniciar o jogo, basta você inserir o seu nome, escolher o seu avatar e clicar aqui!">
+                            Começar a jogar
+                            </button>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="01" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/01.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="02" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/02.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="03" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/03.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="04" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/04.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="05" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/05.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="06" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/06.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="07" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/07.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="08" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/08.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="09" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/09.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="10" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/10.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="11" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/11.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="12" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/12.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="13" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/13.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="14" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/14.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="15" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/15.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="16" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/16.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="17" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/17.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="18" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/18.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="19" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/19.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="20" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/20.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="21" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/21.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="22" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/22.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="23" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/23.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="24" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/24.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="25" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/25.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="26" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/26.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="27" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/27.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="28" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/28.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="29" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/29.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+                <label class="custom-control custom-radio"><input type="radio" name="avatars" id="avatars" value="30" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description"><img src="images/avatars/30.jpeg" width="70" class="rounded-circle sm" alt=""></span></label>
+            </div>
+        </form>
+
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <script src="/node_modules/bootstrap/dist/js/tooltip.js" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+NPM
+
+já vem instalado junto com o node
+Ferramenta de instalação e atualização de pacotes js
+
+Site
+https://www.npmjs.com
+
+comandos de console npm
+
+Exibe a versão do npm
+npm -v
+
+npm install <nome do pacote>
+
+npm update <nome do pacote>
+
+npm uninstall <nome do pacote>
+
+

@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Ping Pong do Henricão</title>
+    <style>
+        #playground {
+            background: #fff;
+            width: 400px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            border: solid 1px #000;
+        }
+
+        #ball {
+            background: #000;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 150px;
+            top: 100px;
+            border-radius: 10px;
+        }
+
+        .paddle {
+            background: #000;
+            left: 50px;
+            top: 70px;
+            position: absolute;
+            width: 30px;
+            height: 70px;
+        }
+
+        #paddleB {
+            left: 320px;
+        }
+
+        #playground {
+            position: relative;
+        }
+
+        #ball {
+            position: absolute;
+        }
+
+        .paddle {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Ping Pong do Henricão
+        </h1>
+    </header>
+    <div id="game">
+        <div id="scoreboard">
+            <div class="score">
+                Player A : <span id="scoreA">0</span>
+            </div>
+            <div class="score">
+                Player B : <span id="scoreB">0</span>
+            </div>
+        </div>
+
+        <div id="playground">
+            <div id="paddleA" class="paddle">
+            </div>
+            <div id="paddleB" class="paddle">
+            </div>
+            <div id="ball">
+            </div>
+        </div>
+    </div>
+    <footer>
+        Exemplo de jogos de Ping Pong.
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client/js/jquery-3.2.1.min.js"></script>
+    <script>
+	    var socket = io();
+    </script>
+    <script src="/client/js/pingpong.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,51 @@
+Jogo de ping pong para multiplos jogadores on-line
+
+Fase 1 de desenvolvimento
+1- Tela Inicial.
+    1.1- Formulário de cadastro do jogador.
+        1.1.1- Campo para o nome do jogador.
+        1.1.2- Campo para seleção do avatar.
+        1.1.3- Botão para enviar o formulário.
+        1.1.4- Enviar informações do formulário.
+            1.1.4.1- Validar se todos os campos foram preenchidos.
+            1.1.4.2- Validar se o nome não foi cadastrado anteriormente.
+                1.1.4.2.1- Exibir mensagem de erro caso o jogador já exista.
+                1.1.4.2.2- Redirecionar para a página que exibe os Jogadores disponíveis (item 2).
+ 2- Tela dos jogadores.
+    2.1- Listar todos os jogadores que não estão jogando.
+        2.1.1- Tabela com tres colunas.
+            2.1.1.1- Coluna com a imagem do avatar.
+            2.1.1.2- Coluna com o nome.
+            2.1.1.3- Coluna com um botão.
+                2.1.1.3.1- O botão só será ativo para os demais jogadores da lista.
+                2.1.1.3.2- Ao clicar no botão exibirá um modal de confirmação para os dois jogadores (item 3).
+    2.2- Placar com os jogadores que estão jogando.
+        2.2.1- Tabela com sete colunas.
+            2.2.1.1- Coluna com avatar do jogador 1.        
+            2.2.1.2- Coluna com o nome do jogador 1.        
+            2.2.1.3- Coluna com a pontuação do jogador 1.        
+            2.2.1.4- Coluna com o valor "vs".        
+            2.2.1.5- Coluna com avatar do jogador 2.        
+            2.2.1.6- Coluna com o nome do jogador 2.        
+            2.2.1.7- Coluna com a pontuação do jogador 2. 
+3- Modal gerado pelo clique do botão no (item 2.1.1.3.2) 
+    3.1- O modal exibirá uma mensagem.
+        3.1.1- Na tela do convidante séra exibido a seguinte mensagem "Estamos aguardando o <<Nome do jogador>> aceitar o seu chamado de Treta.".
+        3.1.2- Na tela do convidado séra exibido a seguinte mensagem "<<Nome do jogador>> está te chamando para uma treta, vai arregar?".
+    3.2- O modal exibirá os seguintes botões.
+        3.2.1- Na tela do convidante não será exibido nenhum botão.
+        3.2.2- Na tela do convidado será exibido o botão Entrar na Treta.                  
+            3.2.2.1- Se clicado abrirá a tela do jogo com uma contagem regressiva de 5 segundos para o jogo começar.
+        3.2.3- Na tela do convidado será exibido o botão Arregar.                  
+            3.2.3.1- Se clicado, o modal do convidado irá fechar.
+            3.2.3.2- Se clicado, o modal do convidante irá exibir a mensagem "O jogador <<Nome do jogador>>" arregou.
+            3.2.3.3- Se clicado, o modal do convidante irá exibir um botão que tem a ação de fechar o modal.
+
+            
+                              
+
+                    
+                
+            
+
+                
