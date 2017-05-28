@@ -1,2 +1,2 @@
 # Estudos
-Repositório com pesquisas, exercicios e etc
+Repositório com pesquisas, exercicios e etc.
