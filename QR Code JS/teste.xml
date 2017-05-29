@@ -1,0 +1,45 @@
+<PAPEROFF>
+      <UID>
+            <IDF>80000037</IDF>
+            <PWD></PWD>
+      </UID>
+      <MDL>
+            <IDF>2</IDF>
+      </MDL>
+      <PRC>
+            <IDF>93</IDF>
+            <ATBS>
+                  <ATB>
+                        <IDF>2</IDF>
+                        <SEQ>1</SEQ>
+                        <VAL>30645740861</VAL>
+                  </ATB>
+            </ATBS>
+            <OCCS>
+                  <DOC>
+                        <IDF>1</IDF>
+                        <SEQ>3</SEQ>
+                        <OCC_INF>1</OCC_INF>
+                  </DOC>
+            </OCCS>
+            <DOCS>
+                  <DOC>
+                        <IDF>1</IDF>
+                        <SEQ>3</SEQ>
+                        <OCC>1</OCC>
+                        <ATBS>
+                              <ATB>
+                                    <IDF>2</IDF>
+                                    <SEQ>1</SEQ>
+                                    <VAL>30645740861</VAL>
+                              </ATB>
+                              <ATB>
+                                    <IDF>4</IDF>
+                                    <SEQ>2</SEQ>
+                                    <VAL>KATIA APARECIDA DUTRA RODRIGUES</VAL>
+                              </ATB>
+                        </ATBS>
+                  </DOC>
+            </DOCS>
+      </PRC>
+</PAPEROFF>
