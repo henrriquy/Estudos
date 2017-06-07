@@ -2,6 +2,10 @@ var app = require('http').createServer(resposta);
 var fs = require('fs');
 var io = require('socket.io')(app);
 
+//Objeto com todos os jogadores atuais.
+var jogadores = [];
+
+
 app.listen(3000);
 console.log("Aplicação está em execução...");
 function resposta(req, res) {
@@ -9,7 +13,7 @@ function resposta(req, res) {
     if (req.url == "/" || req.url == "\\") {
         arquivo = __dirname + '/index.html';
     } else {
-        arquivo = __dirname +req.url;
+        arquivo = __dirname + req.url;
     }
     fs.readFile(arquivo,
         function (err, data) {
@@ -21,3 +25,6 @@ function resposta(req, res) {
             res.end(data);
         });
 }
+io.on("connection", function (socket) {
+    io.emit("teste socket","Salsi fufu");
+});

@@ -1,0 +1,7 @@
+.Set DiskDirectoryTemplate=cab
+
+.Set CabinetNameTemplate=SetupActiveX_CSharp.cab
+
+release\SetupActiveX_CSharp.msi
+
+SetupActiveX_CSharp.inf

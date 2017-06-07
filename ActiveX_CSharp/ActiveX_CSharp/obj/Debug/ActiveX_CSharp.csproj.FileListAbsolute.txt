@@ -1,0 +1,5 @@
+C:\Users\PODEV01\Desktop\Git\Estudos\ActiveX_CSharp\ActiveX_CSharp\bin\Debug\ActiveX_CSharp.dll
+C:\Users\PODEV01\Desktop\Git\Estudos\ActiveX_CSharp\ActiveX_CSharp\bin\Debug\ActiveX_CSharp.pdb
+C:\Users\PODEV01\Desktop\Git\Estudos\ActiveX_CSharp\ActiveX_CSharp\obj\Debug\ActiveX_CSharp.csprojResolveAssemblyReference.cache
+C:\Users\PODEV01\Desktop\Git\Estudos\ActiveX_CSharp\ActiveX_CSharp\obj\Debug\ActiveX_CSharp.dll
+C:\Users\PODEV01\Desktop\Git\Estudos\ActiveX_CSharp\ActiveX_CSharp\obj\Debug\ActiveX_CSharp.pdb
