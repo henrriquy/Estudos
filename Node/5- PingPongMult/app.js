@@ -1,9 +1,7 @@
 var app = require('http').createServer(resposta);
 var fs = require('fs');
 var io = require('socket.io')(app);
-
-//Objeto com todos os jogadores atuais.
-var jogadores = [];
+var objPingPong = new PingPong();
 
 
 app.listen(3000);
