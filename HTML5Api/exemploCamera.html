@@ -6,14 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <style>
-        video {
-            width: 307px;
-            height: 250px;
-            background: rgba(255, 255, 255, 0.5);
-            border: 1px solid #ccc;
-        }
-    </style>
 
 
 
@@ -21,21 +13,27 @@
 
 <body>
     <!--Elemento que exibe o video-->
+    <button id="btnGravar" onclick="abrirVideo(true);">Gravar</button>
+    <button id="btnPararGravacao">Parar Gravação</button>
+    <button id="btnTirarFoto">Tirar Foto</button>
+    <div>
+        <img src="">
+        <canvas style="display:none;"></canvas>
+    </div>
     <p>
         Este exemplo captura video e som da web, grava o
         <br /> video em um blob e coloca esse blob no segundo player para ser exibido.</p>
-    
-        <div>
+    <div>
         <p> player que exibe a imagem da webcam </p>
         <video id="video" autoplay></video>
 
         <p> player que exibe o video que está sendo gravado e o video gravado após ser clicado em Parar Gravação. </p>
         <video controls id="gravacao" autoplay></video>
     </div>
-    <button id="btnGravar" onclick="abrirVideo(true);">Gravar</button>
-    <button id="btnPararGravacao">Parar Gravação</button>
     <script>
-        var url;
+        var canvas = document.querySelector('canvas');
+        var ctx = canvas.getContext('2d');
+
         //Só funciona se estiver em algum servidor http -- ex: iis, apache e etc
         navigator.getMedia = (navigator.getUserMedia ||
             navigator.webkitGetUserMedia ||
@@ -81,6 +79,17 @@
                             };
                         };
                     }
+                    function snapshot() {
+                        if (localMediaStream) {
+                            canvas.width = video.offsetWidth;
+                            canvas.height = video.offsetHeight;
+
+                            ctx.drawImage(video, 0, 0, video.offsetWidth, video.offsetHeight, 0, 0, video.offsetWidth, video.offsetHeight);
+                            // "image/webp" works in Chrome 18. In other browsers, this will fall back to image/png.
+                            document.querySelector('img').src = canvas.toDataURL('image/webp');
+                        }
+                    }
+                    document.getElementById("btnTirarFoto").addEventListener('click', snapshot, false);
                 },
 
                 // callbackErro
